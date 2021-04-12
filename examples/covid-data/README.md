@@ -51,7 +51,6 @@ Data warehouses can be used to store pre-computed features, but they do not prov
 
 You can find this comparison and other details about open source projects regarding feature stores by visiting: https://www.featurestore.org/
 
-<br>
 
 ### Feast vs Amazon SageMaker Feature Store
 
@@ -66,7 +65,6 @@ You can find this comparison and other details about open source projects regard
 <b>Time Travel</b>|SQL Join|-
 <b>Training Data</b>|Streamed to Models|-
 
-<br>
 
 ### Cons of SageMaker Feature Store
 Amazon SageMaker Feature Store was launched at re:Invent on December 1, 2020. Amazon SageMaker Feature Store is a fully managed, purpose-built repository to securely store, update, retrieve, and share ML features.
@@ -79,14 +77,13 @@ SageMaker will make it easier for your data scientists to consume batch sources 
    * To build production data pipelines, data scientists need to combine three loosely integrated tools: SageMaker Pipelines, SageMaker Data Wrangler, and SageMaker Feature Store. Unfortunately these tools only support batch data sources, meaning you’ll still need data engineers and external pipelines to incorporate streaming or real-time data. 
 1. <b>Provide easy-to-access and accurate historical data</b>
    * SageMaker does not provide a utility to join historical data from different sources.
-1. Enable effective governance
+1. <b>Enable effective governance</b>
    * SageMaker doesn’t provide intelligent handling of feature versions, meaning keeping track of your features over time will be challenging. <br> SageMaker Feature Store does not cover the entire feature lifecycle, but it does make important strides to making it easier to manage your data for ML in SageMaker.
 
 <br>
 
-![](/examples/covid-data/images/Picture4.jpg)
+![](/examples/covid-data/images/Picture4.jpeg)
 
-<br>
 
 ## Digging into the details of the offline data storage, the partitioning, and retrieval process
 
